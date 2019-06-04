@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.internal.InternalTokenResult;
+//import com.google.firebase.internal.InternalTokenResult;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;
