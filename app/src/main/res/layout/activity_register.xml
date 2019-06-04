@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@drawable/edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Username"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@drawable/edittext_style"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="normal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@drawable/edittext_style"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_style"
+            android:text="Register"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/regUserPhoto"-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_marginStart="6dp"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="600dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/barrier"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.498"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+        <!--&lt;!&ndash;app:srcCompat="@drawable/iconn" />&ndash;&gt;-->
+
+    <!--<android.support.constraint.Barrier-->
+        <!--android:id="@+id/barrier"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:barrierDirection="top" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/username"-->
+        <!--android:layout_width="265dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:background="@drawable/reg_edittext_style"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--&lt;!&ndash;<android.support.constraint.Guideline&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/guideline"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintGuide_begin="731dp" />&ndash;&gt;-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="265dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="270dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="430dp"-->
+        <!--android:background="@drawable/reg_edittext_style"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Mail"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/password"-->
+        <!--android:layout_width="265dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="284dp"-->
+        <!--android:background="@drawable/reg_edittext_style"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Password"-->
+        <!--android:inputType="textPassword"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/passwordconfirm"-->
+        <!--android:layout_width="265dp"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="380dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:background="@drawable/reg_edittext_style"-->
+        <!--android:ems="10"-->
+        <!--android:hint="ConfirmPassword"-->
+        <!--android:inputType="textPassword"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/barrier"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.003" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_register"-->
+        <!--android:layout_width="84dp"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="350dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:background="@drawable/reg_btn_style"-->
+        <!--android:text="Register"-->
+        <!--android:textColor="#ffffff"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.423" />-->
+
+</android.support.design.widget.CoordinatorLayout>
